@@ -151,7 +151,7 @@ class Leet(object):
                     return
 
                 Leet.block = True
-                msg.reply("**** Congratulations %s %s ****" % (msg.nick, "you are the winner!"))
+                msg.reply("**** Congratulations %s %s (%s) ****" % (msg.nick, "you are the winner!", mytime))
                 Stats().add_score(msg.nick)
 
                 if msg.nick == self.luckyluke:
