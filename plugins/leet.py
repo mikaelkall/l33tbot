@@ -159,11 +159,11 @@ class Leet(object):
                     Stats().add_score(msg.nick)
                     Stats().add_score(msg.nick)
             else:
-                msg.reply("Sorry %s %s" % (msg.nick, "we already have a winner today."))
+                msg.reply("Sorry %s %s (%s)" % (msg.nick, "we already have a winner today.", mytime))
 
         else:
             Leet.block = False
-            msg.reply("Sorry %s %s" % (msg.nick, "Time is not 13:37! Thanks for playing!"))
+            msg.reply("Sorry %s %s (%s)" % (msg.nick, "Time is not 13:37! Thanks for playing!", mytime))
             Stats().add_flist(msg.nick)
 
 
